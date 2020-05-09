@@ -29,7 +29,7 @@ export default function Row(props) {
                     <span className="badge badge-success ml-2" onClick={() => { setLocal(!local) }}>
                         Hecho
                     </span>
-                    <span className="lefty">
+                    <span className="right">
                     <i className="fas fa-trash"onClick={()=>{handleTrash()}} ></i>
                     </span>
                     

@@ -42,14 +42,20 @@ function App() {
         </div>
         <div className="col-2">
           <button
-          className="btn btn-primary"
-          onClick={(e) => { e.preventDefault(); handleNewTask() }} >Nuevo</button>
+            className="btn btn-primary"
+            onClick={(e) => { e.preventDefault(); handleNewTask() }} >Nuevo</button>
+        </div>
+      </div>
+      <div className="row d-flex justify-content-center">
+        <div class="alert alert-light" role="alert">
+          Presionar "Enter" envia una nueva tarea, el tacho de la basura la borra. Hacer click el texto de la tarea o en el "badge" cambia de "hecho" a "por hacer"
         </div>
       </div>
       <div className="row d-flex justify-content-center px-5">
         <div className="col">
           <ul className="list-group">
             {
+              Object.keys(local).length>0?
               Object.keys(local).map((elem, i) => {
                 return (
                   <>
@@ -65,6 +71,8 @@ function App() {
                   </>
                 )
               })
+              :
+              <li type="button" className="list-group-item list-group-item-action d-flex justify-content-center">"Ingrese una Nueva Tarea!"</li>
             }
           </ul>
         </div>
