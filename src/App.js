@@ -32,7 +32,7 @@ function App() {
       <div className="row d-flex justify-content-center mb-2">
         <div className="col-4">
           <input
-            class="form-control"
+            className="form-control"
             type="text"
             ref={input}
             name={counter}
@@ -47,8 +47,8 @@ function App() {
         </div>
       </div>
       <div className="row d-flex justify-content-center">
-        <div class="alert alert-light" role="alert">
-          Presionar "Enter" envia una nueva tarea, el tacho de la basura la borra. Hacer click el texto de la tarea o en el "badge" cambia de "hecho" a "por hacer"
+        <div className="alert alert-light" role="alert">
+          Presionar "Enter" envia una nueva tarea, el tacho de la basura la borra. Hacer click el texto de la tarea o en el "badge" cambia de " por hacer" a "hecho" y viceversa
         </div>
       </div>
       <div className="row d-flex justify-content-center px-5">
@@ -58,7 +58,7 @@ function App() {
               Object.keys(local).length>0?
               Object.keys(local).map((elem, i) => {
                 return (
-                  <>
+                  < >
                     {elem !== "" ?
                       <Row
                         elem={local[elem]}
