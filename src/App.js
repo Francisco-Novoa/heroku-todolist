@@ -72,7 +72,10 @@ function App() {
                 )
               })
               :
-              <li type="button" className="list-group-item list-group-item-action d-flex justify-content-center">"Ingrese una Nueva Tarea!"</li>
+              <li type="button"
+               className="list-group-item list-group-item-action d-flex justify-content-center">
+                 "Ingrese una Nueva Tarea!"
+              </li>
             }
           </ul>
         </div>
